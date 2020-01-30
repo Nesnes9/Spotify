@@ -181,3 +181,198 @@ nav li{
 	margin-top: 0.5em;
 	margin-bottom: 3rem;
 }
+
+.offer{
+	float: left;
+	margin-right: 20px;
+	width: calc((100% - 40px) / 3);
+	/*background-color: red;*/
+	padding: 20px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	min-height: 600px;
+	position: relative;
+}
+
+.offer:last-child{
+	margin-right: 0px;
+}
+
+footer nav + div{
+	right: 15px; /*Equivalent au padding du container*/
+}
+
+footer nav + div a{
+	display: block;
+}
+
+
+.cta-button{
+	background-color: #1DB954;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1em 3em;
+	display: inline-block;
+	border-radius: 900px;
+	letter-spacing: 0.15em;
+	font-size: 0.9rem;
+	font-weight: 700;
+	transition: background-color 0.3s 0.1s, transform 0.3s;
+	transform-origin: center center;
+
+}
+
+.cta-button:hover{
+	background-color: rgb(30, 215, 96);
+	transform: scale(1.1);
+}
+
+.cta-button--full{
+	width: 100%;
+	text-align: center;
+}
+
+.cta-button--white{
+	color: #1DB954;
+	background-color: white;
+	border: solid 1px #1DB954;
+}
+
+/*Animation du CTA de la section 1*/
+
+@keyframes fadeIn{
+	from {opacity: 0; transform: translateY(100%);}
+	to {opacity: 1; transform: translateY(0%);}
+}
+
+#section1 .cta-button{
+	animation: fadeIn 1s;
+}
+
+
+main > section{
+	padding: 35px 0;
+}
+
+.offer ul{
+	/*list-style-image: url('images/arrow.svg');*/
+	list-style: none;
+	border-top: thin solid #CCC;
+	padding-top: 2rem;
+	margin-top: 2rem;
+}
+
+.offer li{
+	position: relative;
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+}
+
+.offer li::before{
+	content: '';
+	width: 24px;
+	height: 24px;
+	background-image: url('images/arrow.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: 0;
+	left: -40px;
+}
+
+.offer h1{
+	background-color: rgb(63, 158, 215);
+	color: white;
+	font-size: 0.9rem;
+	line-height: 1em;
+	display: inline-block;
+	padding: 0.6em;
+	border-radius: 0.3em;
+	margin-bottom: 0.1em;
+}
+
+.offer h2{
+	margin: 0.3em 0 0;
+}
+
+.offer h3{
+	font-size: 1rem;
+	line-height: 1.5em;
+	margin: 0;
+	font-weight: 400;
+}
+
+.offer footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	font-size: 0.9rem;
+	color: rgb(145, 148, 150);
+	text-align: center;
+}
+
+.offer footer small{
+	display: block;
+	margin-top: 1rem;
+	line-height: 1.4em;
+}
+
+.offer footer small a{
+	color: currentColor;
+}
+
+body > footer{
+	background-color: black;
+	margin-top: 5rem;
+}
+
+body > footer .container{
+	padding: 3rem 0 1rem;
+}
+
+body > footer *{
+	font-size: 0.75rem;
+	color: #919496;
+}
+
+.country-france{
+	text-decoration: none;
+	margin-bottom: 1rem;
+}
+
+.country-france::after{
+	content: '';
+	height: 1.2em;
+	width: 1.2em;
+	background-image: url('images/fr_flag.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	margin-left: 1em;
+	display: inline-block;
+}
+
+.align-right{
+	text-align: right;
+}
+
+#modal {
+	
+	position: fixed ;
+	top : 0 ;
+	left:0;
+	width: 100vw;
+	height: 100vh ;
+	background-color : rgba(0,0,0,0.6) ;
+	z-index: 10 ;
+	display:flex ;
+	justify-content: center;
+	align-items : center ;
+}
+
