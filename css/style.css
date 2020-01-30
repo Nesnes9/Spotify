@@ -75,3 +75,109 @@ nav li{
 	/*display: inline-block;*/
 	float: left;
 }
+.container{
+	width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#section1{
+	height: 580px;
+	background-color: rgb(80, 155, 245);
+	background-image: url('images/hero-image.png');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: auto 85%;
+}
+
+#section1 h1{
+	color: white;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+#section1 h2{
+	color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.clearfix::before{
+	content: '';
+	display: table;
+}
+
+#section1 small{
+	position: absolute;
+	left: 15px; /*Equivalent au padding du container*/
+	bottom: 0;
+	max-width: 50%;
+	color: white;
+	font-size: 0.8rem;
+}
+
+#section1 .container{
+	height: 100%;
+	position: relative;
+}
+
+.vertically-centered{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.benefit{
+	float: left;
+	width: calc((100% - 60px) / 4);
+	/*background-color: red;*/
+	margin-right: 20px;
+	text-align: center;
+}
+
+.benefit:last-child{
+	margin-right: 0px;
+}
+
+.benefit img{
+	width: 60%;
+}
+
+.benefit h1{
+	font-size: 1.3rem;
+	margin-bottom: 0.5em;
+	line-height: 1.5em;
+}
+
+.benefit h2{
+	font-size: 1rem;
+	font-weight: 400;
+	width: 60%;
+	margin: auto;
+}
+
+
+.container > h1{
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.container > h1.small{
+	text-align: center;
+	font-size: 2.3rem;
+	font-weight: 900;
+	margin-bottom: 0;
+}
+
+.container > h2{
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 0.5em;
+	margin-bottom: 3rem;
+}
