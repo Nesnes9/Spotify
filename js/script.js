@@ -80,3 +80,13 @@ $(window).scroll(function(){
 	})
 	
 })
+
+function showModal(){
+	
+	$('body').append('<div id="modal"><button onclick="closeModal()">Fermer</button></div>');
+}
+
+function closeModal(){
+	
+	$('#modal').remove();
+}
