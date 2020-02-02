@@ -85,7 +85,7 @@ nav li{
 #section1{
 	height: 580px;
 	background-color: rgb(80, 155, 245);
-	background-image: url('images/hero-image.png');
+	background-image: url('../images/hero-image.png');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-size: auto 85%;
@@ -275,7 +275,7 @@ main > section{
 	content: '';
 	width: 24px;
 	height: 24px;
-	background-image: url('images/arrow.svg');
+	background-image: url('../images/arrow.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -350,7 +350,7 @@ body > footer *{
 	content: '';
 	height: 1.2em;
 	width: 1.2em;
-	background-image: url('images/fr_flag.svg');
+	background-image: url('../images/fr_flag.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center bottom;
